@@ -4,7 +4,9 @@
  */
 package com.example.poiesis.controller;
 
+import com.example.poiesis.domain.solicitud;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 
 /**
  *
@@ -12,5 +14,10 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 public class solicitudController {
+    
+    @GetMapping("/contactenos")
+    public String agregar(solicitud s){
+        return "contactenos.html";
+    }
     
 }
