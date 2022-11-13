@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html xnlns:th="http://www.thymeleaf.org" 
+      xnlns="https://www.w3.org/1999/xhtml">
+    <head>
+        <title>Contactenos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
+    </head>
+ 
+    <style>
+        body{
+            background: rgb(96, 237, 95, 0.2);
+        }
+        footer{
+            background: rgba(24, 21, 15, 0.4);
+        }
+        
+    </style>
+    
+    <body>
+        <div id="principal" style="margin-left: 10%; width: 80%;">
+            <header th:replace="layout/plantilla :: header"></header>
+        
+        <div style="display: flex;flex-direction: row;margin-top: 2%;margin-bottom: 2%;">
+            
+            <div style="margin-left: 2%;width:100%">
+                <center>
+                    <br><!-- comment -->
+                    <br><!-- comment -->
+                    <br><!-- comment -->
+                    <br><!-- comment -->
+                    <h3>Contáctanos</h3>
+                    <a href="#"><i class="bi bi-shop"></i><p> Tottus, Avenida Áncash, El Agustino</p></a>
+                    <a href="#"><i class="bi bi-telephone-fill"></i><p>958 155 939 - 999 406 760</p></a>
+                    <a href="#"><i class="bi bi-mailbox"></i><p>poiesis-design@gmail.com</p></a>
+                </center>
+            </div><!-- comment -->
+            
+            <div class="mapouter" style="margin-left: 2%">
+            <div class="gmap_canvas">
+                <iframe width="562" height="500" id="gmap_canvas" 
+                        src="https://maps.google.com/maps?q=zarate&t=&z=11&ie=UTF8&iwloc=&output=embed" 
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+                <a href="https://123movies-to.org">123movies</a><br>
+                <style>.mapouter{position:relative;text-align:right;height:500px;width:562px;}</style>
+                <a href="https://www.embedgooglemap.net">use google map on website</a>
+                <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:562px;}</style>
+            </div>
+            </div>
+            
+        </div>
+        
+                <!----- Footer ----->
+         <footer th:replace="layout/plantilla :: footer" ></footer>
+        </div>
+    </body>
+    
+        <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>    
+</html>

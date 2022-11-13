@@ -30,18 +30,18 @@ public class solicitud implements Serializable{
     
     @NotEmpty
     private String asunto_soli;
-    
     @NotEmpty
     private String nombre;
+    
     @NotEmpty
     private String apellido;
     
     @NotEmpty
-    private int id_tipoServicio;
+    private Long id_tipo_servicio;
     
     @NotEmpty
     private String detalle_servicio;
     
-    @NotEmpty
-    private int id_estado;
+        @NotEmpty
+    private Long id_estado;
 }
